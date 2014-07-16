@@ -14,20 +14,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jclouds.vcloud.director.v1_5;
+package org.jclouds.vcloud.director.v1_5.compute.config;
 
-import org.jclouds.compute.internal.BaseComputeServiceApiMetadataTest;
-import org.testng.annotations.Test;
+import com.google.inject.AbstractModule;
 
 /**
- * 
- * @author Adrian Cole
+ * per docs, we are to use pool mode.
  */
-@Test(groups = "unit", testName = "VCloudDirectorApiMetadataTest")
-//TODO: BaseComputeServiceApiMetadataTest
-public class VCloudDirectorApiMetadataTest extends BaseComputeServiceApiMetadataTest {
+public class VCloudDirectorComputeServiceDependenciesModule extends
+		AbstractModule {
 
-   public VCloudDirectorApiMetadataTest() {
-      super(new VCloudDirectorApiMetadata());
-   }
+	@Override
+	protected void configure() {
+
+	}
+	// FIXME: enable when compute service done
+	// extends VCloudDirectorComputeServiceContextModule {
+	//
+	// @Override
+	// protected TemplateOptions provideTemplateOptions(Injector injector,
+	// TemplateOptions options) {
+	// return
+	// options.as(VCloudDirectorTemplateOptions.class).ipAddressAllocationMode(IpAddressAllocationMode.POOL);
+	// }
 }

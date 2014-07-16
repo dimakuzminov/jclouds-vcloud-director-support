@@ -14,20 +14,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jclouds.vcloud.director.v1_5;
+package org.jclouds.vcloud.director.v1_5.compute.config;
 
-import org.jclouds.compute.internal.BaseComputeServiceApiMetadataTest;
-import org.testng.annotations.Test;
+import org.jclouds.rest.ConfiguresRestClient;
+import org.jclouds.vcloud.director.v1_5.config.VCloudDirectorRestClientModule;
 
 /**
- * 
- * @author Adrian Cole
+ * Configures the VCloud authentication service connection, including logging and http transport.
  */
-@Test(groups = "unit", testName = "VCloudDirectorApiMetadataTest")
-//TODO: BaseComputeServiceApiMetadataTest
-public class VCloudDirectorApiMetadataTest extends BaseComputeServiceApiMetadataTest {
+@ConfiguresRestClient
+public class VCloudDirectorComputeServiceContextModule extends VCloudDirectorRestClientModule {
 
-   public VCloudDirectorApiMetadataTest() {
-      super(new VCloudDirectorApiMetadata());
-   }
 }
