@@ -80,6 +80,11 @@
     </dependency>
     <dependency>
       <groupId>org.apache.jclouds.api</groupId>
+      <artifactId>vcloud-director</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.jclouds.api</groupId>
       <artifactId>cloudsigma</artifactId>
       <version>${project.version}</version>
     </dependency>

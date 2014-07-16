@@ -39,6 +39,7 @@
     <module>ec2</module>
     <module>sqs</module>
     <module>vcloud</module>
+    <module>vcloud-director</module>
     <module>elasticstack</module>
     <module>atmos</module>
     <module>swift</module>

@@ -371,6 +371,8 @@ Here's an example of creating and running a small linux node in the group webser
          :domain-name
        ;; trmk-ecloud trmk-vcloudexpress
          :ssh-key-fingerprint
+       ;; vcloud-director
+         :description :customization-script :ip-address-allocation-mode
        ;; vcloud
          :description :customization-script :ip-address-allocation-mode])
     (make-option-map
